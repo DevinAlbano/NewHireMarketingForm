@@ -10,6 +10,11 @@
 
         /* Layout Styles */
 
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
         header {
             margin: 0;
             padding: .9em;
@@ -18,7 +23,6 @@
             color: white;
             font-family: "DINPro-Medium", sans-serif;
             text-align: center;
-            max-width: 700px;
         }
 
         .welcomeheader {
@@ -30,11 +34,10 @@
         }
 
         .imageWrapper {
-            float: left;
+            display: 
         }
         
         .userAbout {
-            float: left;
             margin-left: 20px;
         }
 
@@ -43,6 +46,13 @@
             color: #a0252b;
         }
 
+        .wrapper {
+            width: 800px;
+        }
+
+        img {
+            max-width: 40%;
+        }
     </style>
 </head>
 
@@ -50,13 +60,14 @@
 
 
 <body>
+    <div class="wrapper">
     <header class="masthead">
         <h1 class="welcomeheader">Welcome</h1>
         <h2 class="welcomeSubText">User Name</h2>
     </header>
 
     <div class="imageWrapper">
-        <img src="/assets/img/portrait.png" alt="User Image">
+        <img src="/assets/img/portrait.jpg" alt="User Image">
     </div>
 
     <div class="userAbout">
@@ -77,6 +88,6 @@
         <h3 class="questionHead">Why BNB? </h3>
             <p class="questionAnswer">Lorem, ipsum dolor.</p>
     </div>
-
+    </div>
 </body>
 </html>
