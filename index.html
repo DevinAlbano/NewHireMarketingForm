@@ -13,6 +13,7 @@
         html {
             margin: 0;
             padding: 0;
+            font-family: "DINPro-Medium", sans-serif;
         }
 
         header {
@@ -21,7 +22,6 @@
             padding-left: .5em;
             background-color:#a0252b;
             color: white;
-            font-family: "DINPro-Medium", sans-serif;
             text-align: center;
         }
 
@@ -33,12 +33,10 @@
             font-weight: 300;
         }
 
-        .imageWrapper {
-            display: 
-        }
         
         .userAbout {
-            margin-left: 20px;
+            margin-left: 10px;
+
         }
 
         .questionHead {
@@ -48,11 +46,23 @@
 
         .wrapper {
             width: 800px;
+            display: flex;
         }
 
         img {
-            max-width: 40%;
+            width: 90%;
+            margin: 20px;
+            border: solid 1px grey;
         }
+
+        imgWrapper{
+            width: 400px;
+        }
+
+        .userAbout {
+            width: 400px;
+        }
+
     </style>
 </head>
 
@@ -60,16 +70,15 @@
 
 
 <body>
-    <div class="wrapper">
     <header class="masthead">
-        <h1 class="welcomeheader">Welcome</h1>
-        <h2 class="welcomeSubText">User Name</h2>
+            <h1 class="welcomeheader">Welcome</h1>
+            <h2 class="welcomeSubText">User Name</h2>
     </header>
 
-    <div class="imageWrapper">
+    <div class="wrapper">
+    <div class="imgWrapper">
         <img src="/assets/img/portrait.jpg" alt="User Image">
     </div>
-
     <div class="userAbout">
         <h3 class="questionHead">Born in: </h3>
             <p class="questionAnswer">Lorem, ipsum dolor.</p>
