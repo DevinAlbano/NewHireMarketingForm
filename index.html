@@ -4,101 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Welcome to BNBuilders</title>
     <style>
-
-
+ 
+ 
         /* Layout Styles */
-
+ 
         html {
             margin: 0;
             padding: 0;
-            font-family: "DINPro-Medium", sans-serif;
+            font-family:"DINPro-Black", sans-serif;
         }
-
+ 
         header {
-            margin: 0;
-            padding: .9em;
-            padding-left: .5em;
             background-color:#a0252b;
             color: white;
             text-align: center;
-            width: 800px;
-            height: 150px;
         }
-
+ 
+        .card {
+            box-shadow: 5px 5px;
+            border: 1px grey solid;
+            width: 800px;
+        }
+       
+        .masthead {
+            width: 100%;
+            overflow: hidden;
+        }
+       
         .welcomeheader {
             text-transform: uppercase;
-            font-weight: 800;
-            font-size: 45px;
         }
-    
+   
         .welcomeSubText {
             font-weight: 300;
-            margin-bottom: 0;
         }
-
-        
+ 
+        .imageWrapper {
+            float: left;
+            width: 400px;
+            border: 1px grey solid;
+            margin: 10px;
+            background-color: #a0252b;
+        }
+       
         .userAbout {
-            margin-left: 10px;
-
+            float: left;
+            margin-left: 15px;
         }
-
+ 
         .questionHead {
             text-transform: uppercase;
             color: #a0252b;
         }
-
+ 
         .wrapper {
-            width: 800px;
+            display: flex;
         }
-
+ 
         img {
-            width: 20%;
-            margin: 20px;
-            border: solid 1px grey;
+            max-width: 100%;
         }
-
-        imgWrapper {
-            width: 390px;
-        }
-
-        .userAbout {
-            width: 390px;
-        }
-
     </style>
 </head>
-
-
-
-
+ 
+ 
+ 
+ 
 <body>
-    <header class="masthead">
+   
+    <div class="card">
+        <header class="masthead">
             <h1 class="welcomeheader">Welcome</h1>
             <h2 class="welcomeSubText">User Name</h2>
-    </header>
-
-    <div class="wrapper">
-    <span class="imgWrapper"><img src="/assets/img/portrait.jpg" alt=""></span>
-    <div class="userAbout">
-        <h3 class="questionHead">Born in: </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-        <h3 class="questionHead">One word about you: </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-        <h3 class="questionHead">Hobby: </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-        <h3 class="questionHead">Favorite Song: </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-        <h3 class="questionHead">Favorite Travel Destination: </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-        <h3 class="questionHead">Greatest Fear: </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-        <h3 class="questionHead">Company you came from: </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-        <h3 class="questionHead">Why BNB? </h3>
-            <p class="questionAnswer">Lorem, ipsum dolor.</p>
-    </div>
+        </header>
+        <div class="wrapper">
+            <div class="imageWrapper">
+                <img src="/assets/img/portrait.png" alt="User Image">
+            </div>
+ 
+            <div class="userAbout">
+                <h3 class="questionHead">Born in: </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+ 
+                <h3 class="questionHead">One word about you: </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+ 
+                <h3 class="questionHead">Hobby: </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+                   
+                <h3 class="questionHead">Favorite Song: </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+ 
+                <h3 class="questionHead">Favorite Travel Destination: </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+ 
+                <h3 class="questionHead">Greatest Fear: </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+                   
+                <h3 class="questionHead">Company you came from: </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+ 
+                <h3 class="questionHead">Why BNB? </h3>
+                    <p class="questionAnswer">Lorem, ipsum dolor.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
